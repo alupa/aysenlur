@@ -38,12 +38,6 @@
 				<!-- Header -->
 					<header id="header" class="alt">
 						<!--<h1><a href="index.html"><img src="images/logo_s.png" alt="" /></a></h1>-->
-						<div id="google_translate_element"></div><script type="text/javascript">
-							function googleTranslateElementInit() {
-							  new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true}, 'google_translate_element');
-							}
-							</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>	
-						<nav id="nav">
 							<ul>
 								<li class="special">
 									<a href="#menu" class="menuToggle"><span>Menu</span></a>
@@ -256,6 +250,12 @@
 					image.src = $(this).find("img").attr("src");
 				});
 			</script>
+
+			<div id="google_translate_element"></div><script type="text/javascript">
+			function googleTranslateElementInit() {
+			new google.translate.TranslateElement({pageLanguage: 'es', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT, multilanguagePage: true}, 'google_translate_element');
+			}
+			</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 	</body>
 </html>
