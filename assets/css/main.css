@@ -1462,6 +1462,10 @@
 			border: 0 none;
 		}
 
+		img {
+			border: solid white 1px;
+		}
+
 	strong, b {
 		color: #fff;
 		font-weight: 600;
@@ -1950,6 +1954,7 @@
 		.image img {
 			border-radius: 3px;
 			display: block;
+			
 		}
 
 		.image.left {
