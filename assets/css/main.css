@@ -2035,14 +2035,14 @@
 		}
 
 	ul {
-		list-style: disc;
+		list-style: none;
 		margin: 0 0 2em 0;
-		padding-left: 1em;
+		/*padding-left: 1em;*/
 	}
 
-		ul li {
+		/*ul li {
 			padding-left: 0.5em;
-		}
+		}*/
 
 		ul.alt {
 			list-style: none;
