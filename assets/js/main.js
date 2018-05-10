@@ -125,17 +125,17 @@
 				});
 })(jQuery);
 
-var current = (localStorage.getItem("data-lang-ref")) ? localStorage.getItem("data-lang-ref") : 'en';
-
+var default_lang = 'es';
+var current_lang = (localStorage.getItem("data-lang-ref") !== 'null') ? localStorage.getItem("data-lang-ref") : default_lang;
 				var i18n = domI18n({
 					selector: '[data-translatable]',
 					separator: ' || ',
 					languages: ['en', 'es'],
-					defaultLanguage: 'es',
-					currentLanguage: current
+					defaultLanguage: default_lang,
+					currentLanguage: current_lang
 				});
 
-				var nav = Array.prototype.slice.call(document.querySelectorAll('#header > ul li a'));
+				var nav = Array.prototype.slice.call(document.querySelectorAll('#header > ul li a[href="#"]'));
 
 				nav.forEach(function (item) {
 				item.onclick = function (e) {
