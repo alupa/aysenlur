@@ -124,3 +124,23 @@
 					image.src = $(this).find("img").attr("src");
 				});
 })(jQuery);
+
+var current = (localStorage.getItem("data-lang-ref")) ? localStorage.getItem("data-lang-ref") : 'en';
+
+				var i18n = domI18n({
+					selector: '[data-translatable]',
+					separator: ' || ',
+					languages: ['en', 'es'],
+					defaultLanguage: 'es',
+					currentLanguage: current
+				});
+
+				var nav = Array.prototype.slice.call(document.querySelectorAll('#header > ul li a'));
+
+				nav.forEach(function (item) {
+				item.onclick = function (e) {
+					localStorage.setItem("data-lang-ref", this.getAttribute('data-lang-ref'));
+					i18n.changeLanguage(this.getAttribute('data-lang-ref'));
+					e.preventDefault();
+				};
+				});
