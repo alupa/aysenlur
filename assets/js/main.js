@@ -110,7 +110,7 @@
 						return false;
 					});
 
-	let container = document.getElementById("container");
+	var container = document.getElementById("container");
 				$('select[name="streaming-category"]').change(function(){
 					switch($(this).val()){
 						case "spotify": container.innerHTML = '<iframe src="https://open.spotify.com/embed?uri=spotify:album:3ucBdPtu9ttGtn6ebcMcyx" width="100%" height="80" frameborder="0" allowtransparency="true"></iframe>'; break;
@@ -120,7 +120,7 @@
 				});
 
 				$('a[href="#gallery"]').click(function(){
-					let image = document.getElementById("image");
+					var image = document.getElementById("image");
 					image.src = $(this).find("img").attr("src");
 				});
 })(jQuery);
