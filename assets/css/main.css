@@ -1465,6 +1465,16 @@
 		img {
 			border: solid white 1px;
 		}
+		.bit-details {
+			border-bottom: none;
+		}
+		.bit-widget .bit-rsvp {
+			color: #fff !important;
+			border: 1px solid #fff !important;
+		}
+		.bit-venue{
+			font-weight: bold;
+		}
 
 	strong, b {
 		color: #fff;
